@@ -1,0 +1,19 @@
+{
+    "education":[
+        {
+            "title": "Sept 2018 - Jun 2023",
+            "cardTitle": "Bachelors of Applied Science, Computer and Electrical Engineering",
+            "cardSubtitle":"University of Toronto",
+            "cardDetailedText": "Capstone Project - EEG and FSCV Multi-Modal Device",
+            "icon" : {
+                "src": "images/education/uoft.png"
+            }
+        },
+        {
+            "title": "Sept 2014 - June 2018",
+            "cardTitle": "High School",
+            "cardSubtitle":"Iroquois Ridge High School, Oakville",
+            "cardDetailedText": "Marks - 95%"
+        }
+    ]
+}

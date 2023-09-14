@@ -1,0 +1,37 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/aws.jpg",
+            "title": "This Website",
+            "bodyText": "AWS Multi-Container Website for personal software endeavors",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Funinja"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://dennislams.com"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Docker",
+                "JavaScript",
+                "AWS"
+            ]
+        },
+        {
+            "title": "Coursify",
+            "bodyText": "Directed a team of undergraduates for the creation of course planning software handling 5000+ courses \n - Devised a search algorithm, search tag selection, and an autocomplete searchbar feature for searching through the thousands of courses using Python and MongoDB",
+            "tags" : [
+                "Python",
+                "Flask",
+                "React.js",
+                "Heroku",
+                "MongoDB",
+                "Github Actions"
+            ]
+        }
+    ]
+}

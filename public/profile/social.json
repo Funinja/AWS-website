@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/dennis-lam-824871203/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/Funinja"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:denwt.lam@outlook.com"
+        }
+    ]
+}

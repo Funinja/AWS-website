@@ -1,0 +1,16 @@
+{
+    "experiences": [
+        {
+            "title": "Software Engineering Intern",
+            "subtitle": "Royal Bank of Canada",
+            "workType": "Internship",
+            "workDescription": [
+                "Lead and implemented a query analysis tool for handling over 20 000 user profiles",
+                "Collaborated with a team of 5+ lead developers to develop an API for banking and accounting statistics",
+                "Developed automated testing programs for over 20 UI features and several databases for required QA testing and debugging",
+                "Updated and maintained 2 testing frameworks while coordinating testing between web development and quality assurance teams to account for new versions of the Wealth Management web application"
+            ],
+            "dateText": "04/2019 – 08/2019"
+        }
+    ]
+}
