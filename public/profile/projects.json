@@ -2,8 +2,8 @@
     "projects" : [
         {
             "image" : "images/projects/aws.jpg",
-            "title": "This Website",
-            "bodyText": "AWS Multi-Container Website for personal software endeavors",
+            "title": "AWS Hobby Website",
+            "bodyText": "AWS Multi-Container Website for personal software endeavors \n - Uses Github Actions and JUnit to implement CI/CD Pipeline \n - Configured two Docker containers for testing and website deployment \n - Setup AWS Elastic Beanstalk for multi-container deployment",
             "links": [
                 {
                     "text": "GitHub",
@@ -22,8 +22,49 @@
             ]
         },
         {
+            "image" : "images/projects/pomodoro.jpg",
+            "title": "Dynamic Next.js Website",
+            "bodyText": "Designed a productivity website with custom productivity features organized between 5 web pages with security protocols. \n - Constructed login and registration features that use Google reCAPTCHA v2 API to prevent DDOS attacks \n - Stores and manages a NoSQL MongoDB collection of users with over 10 different fields \n - Implemented open standard (RFC 7519) JSON Web Token authentication and middleware to ensure clients can view their information with both confidentiality and integrity",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Funinja/my-website"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Docker",
+                "JavaScript",
+                "AWS"
+            ]
+        },
+        {
+            "image" : "images/projects/eeg.png",
+            "title": "Multi-Modal Neural Interface",
+            "bodyText": "Cooperated with a team of software students to develop a multi-modal neural interface for the nRF5340 dk using concurrent electroencephalogram (EEG) and electrochemical (FSCV) medical sensors \n - Managed the development of the project by creating a system-level overview for its development \n - Constructed a Python concurrent user-interface with filter settings to specify viewable 8+ sensor channels and other sensor related driver settings, ie voltage references, input settings, etc \n - Implemented Bluetooth Low Energy (BLE) bit-wise communication between the threads of the user-interface and the nRF5340 processor \n - Created sensor driver tests using C++ and nRF Connect to emulate EEG and FSCV sensor data to validate the performance of the concurrent driver threads",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Funinja/Neural-Interface-GUI"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Python",
+                "nRF Connect",
+                "Zephyr"
+            ]
+        },
+        {
+            "image" : "images/projects/Coursify.png",
             "title": "Coursify",
-            "bodyText": "Directed a team of undergraduates for the creation of course planning software handling 5000+ courses \n - Devised a search algorithm, search tag selection, and an autocomplete searchbar feature for searching through the thousands of courses using Python and MongoDB",
+            "bodyText": "Directed a team of undergraduates for the creation of course planning software handling 5000+ courses \n - Devised a search algorithm, search tag selection, and an autocomplete searchbar feature for searching through the thousands of courses using Python and MongoDB \n - Produced 3+ Python tests for CI/CD pipeline for API requests and responses of selecting courses \n - Assembled the Heroku deployment of the application through the Heroku API, configuring environment variables ensuring fundamental security practices \n - Parsed 5000+ course data (ie course pre-requisites, department, etc) to setup an API and MongoDB database that allows for specified course planning",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Funinja/HerokuDep"
+                }
+            ],
             "tags" : [
                 "Python",
                 "Flask",
@@ -31,6 +72,36 @@
                 "Heroku",
                 "MongoDB",
                 "Github Actions"
+            ]
+        },
+        {
+            "image" : "images/projects/maps.png",
+            "title": "Geographic Information System Software",
+            "bodyText": "Lead, constructed, and designed mapping C++ GTK software for 5+ cities all over the world, including Toronto. \n - Uses Graph Data Structure Algorithms such as Dijkstra’s shortest path algorithm and breadth-first search algorithms to give the shortest pathways between two destinations\n - Applied multi-source Dijkstra and other algorithms making the map achieve a speed 70% faster than the other student map implementations.\n - Made a custom user interface that filters maps with 1000+ geographic elements/landmarks and data sets/statistics.",
+            "tags" : [
+                "C++",
+                "GTK"
+            ]
+        },
+        {
+            "image" : "images/projects/llvm.jpg",
+            "title": "LLVM Compiler Software",
+            "bodyText": "Created a C++ lexer, parser, and code generation of a custom compiler using Bison, LLVM IR generation, and Kaleidoscope \n - Devised a custom created abstract syntax tree to evaluate the statements, expressions, and functions for compilation \n - Developed the productions/grammar of the language while ensuring proper precedence and associativity of binary expressions \n - Assembled the code generation (IF, WHILE, FUNCTION, and other coding blocks) of the custom language with specification to dynamic 64-bit integer and float values using LLVM’s memory API",
+            "tags" : [
+                "React",
+                "Docker",
+                "JavaScript",
+                "AWS"
+            ]
+        },
+        {
+            "image" : "images/projects/database.png",
+            "title": "Database Drivers Software",
+            "bodyText": "Directed the creation of 2 custom databases with regular database functionality and database drivers that handled concurrency and parallelism. \n - Uses metaprogramming to handle different types of inputted server data, including the concept of foreign keys \n - Created low-level networking with big-endian byte communication between server and client for both of the databases \n - Developed database query functionality, specializing in INSERT, SELECT, REMOVE, CREATE, and other SQL related statements",
+            "tags" : [
+                "C++",
+                "Python",
+                "Rust"
             ]
         }
     ]

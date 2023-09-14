@@ -64,6 +64,10 @@
                 {
                     "icon": "images/skills/springboot.png",
                     "title": "SpringBoot"
+                },
+                {
+                    "icon": "images/skills/llvm.png",
+                    "title": "LLVM"
                 }
             ]
         },
