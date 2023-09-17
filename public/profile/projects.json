@@ -3,11 +3,11 @@
         {
             "image" : "images/projects/aws.jpg",
             "title": "AWS Hobby Website",
-            "bodyText": "AWS Multi-Container Website for personal software endeavors \n - Uses Github Actions and JUnit to implement CI/CD Pipeline \n - Configured two Docker containers for testing and website deployment \n - Setup AWS Elastic Beanstalk for multi-container deployment",
+            "bodyText": "AWS Multi-Container Website for personal software endeavors \n - Uses Github Actions to implement CI/CD Pipeline \n - Configured two Docker containers for testing and website deployment \n - Setup AWS Elastic Beanstalk for multi-container deployment",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/Funinja"
+                    "href": "https://github.com/Funinja/AWS-website"
                 },
                 {
                     "text": "Live",
