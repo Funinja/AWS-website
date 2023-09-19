@@ -9,11 +9,6 @@ on:
 jobs:
   container-test-job:
     runs-on: ubuntu-latest
-    container:
-      image: funinja/aws-website:v-1
-      volumes:
-        - /home/node/app/node_modules
-        - ./:/home/node/app
     steps:
       - name: Run Jest Test
-        run: (ls -la && cd .. && ls -la)
+        run: (docker built -t funinja/aws-website -f Dockerfile.dev .) && (docker run -e CI=true funinja/aws-website npm run test)
