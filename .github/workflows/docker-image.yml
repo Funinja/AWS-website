@@ -7,8 +7,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-  container-test-job:
+
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Run Jest Test
-        run: docker compose -f docker-compose-test.yml up --build --exit-code-from tests
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker compose -f docker-compose-test.yml up --build --exit-code-from tests
