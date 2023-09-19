@@ -10,14 +10,10 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: node:14.16
-      env:
-        NODE_ENV: development
-      ports:
-        - 80
+      image: funinja/aws-website:v-1
       volumes:
-        - my_docker_volume:/volume_mount
-      options: --cpus 1
+        - /home/node/app/node_modules
+        - .:/home/node/app
     steps:
       - name: Check for dockerenv file
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
