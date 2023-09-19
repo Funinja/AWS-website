@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Jest Test
-        run: (docker built -t funinja/aws-website -f Dockerfile.dev .) && (docker run -e CI=true funinja/aws-website npm run test)
+        run: (docker build -t funinja/aws-website -f Dockerfile.dev .) && (docker run -e CI=true funinja/aws-website npm run test)
