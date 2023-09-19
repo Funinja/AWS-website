@@ -13,7 +13,7 @@ jobs:
       image: funinja/aws-website:v-1
       volumes:
         - /home/node/app/node_modules
-        - .:/home/node/app
+        - ./:/home/node/app
     steps:
       - name: Run Jest Test
         run: (ls -la && cd .. && ls -la)
