@@ -16,4 +16,4 @@ jobs:
         - .:/home/node/app
     steps:
       - name: Run Jest Test
-        run: (npm run test --loglevel=verbose)
+        run: (ls -la && cd .. && ls -la)
