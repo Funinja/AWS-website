@@ -12,7 +12,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    container:
+      image: funinja/aws-website:v-1
+      volumes:
+      - /home/node/app/node_modules
+      - .:/home/node/app
+
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker compose -f docker-compose-test.yml up --build 
+    - name: Jest Checks
+      run: npm run test
