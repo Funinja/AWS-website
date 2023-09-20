@@ -1,0 +1,39 @@
+name: Merge and Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker compose -f docker-compose-test.yml up --build --exit-code-from tests
+  
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout GitHub source code
+      uses: actions/checkout@v2
+
+    - name: Generate deployment package
+      run: zip -r deploy.zip . -x '*.git*'
+
+    - name: Deploy to AWS Elastic Beanstalk
+      uses: einaregilsson/beanstalk-deploy@v21
+      with:
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        application_name: aws-website
+        environment_name: Aws-website-env
+        version_label: "ver-${{ github.sha }}"
+        use_existing_version_if_available: true
+        region: "us-east-2"
+        deployment_package: deploy.zip
