@@ -11,7 +11,10 @@ COPY --chown=node:node ./ ./
 
 RUN npm run build
 
-FROM nginx
-EXPOSE 80
+FROM nginx:alpine
 
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf    
 COPY --from=builder /home/node/app/build /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
