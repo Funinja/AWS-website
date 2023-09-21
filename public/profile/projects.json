@@ -3,7 +3,7 @@
         {
             "image" : "images/projects/aws.jpg",
             "title": "AWS Hobby Website",
-            "bodyText": "AWS Multi-Container Website for personal software endeavors \n - Uses Github Actions to implement CI/CD Pipeline \n - Configured two Docker containers for testing and website deployment \n - Setup AWS Elastic Beanstalk for multi-container deployment",
+            "bodyText": "AWS multi-container website for personal software showcases and to host solutions to my side projects/hobbies \n - Uses custom docker images to test and develop the website using Jest and Docker Compose \n - Applied CI/CD practices by utilizing Github Actions to automate testing, building, and AWS deployment of test, development, and production Docker containers \n - Setup and customized AWS IAM roles and AWS Elastic Beanstalk environment for AWS Docker deployment",
             "links": [
                 {
                     "text": "GitHub",
@@ -11,7 +11,7 @@
                 },
                 {
                     "text": "Live",
-                    "href": "https://dennislams.com"
+                    "href": "http://dennislams.com/"
                 }
             ],
             "tags" : [
